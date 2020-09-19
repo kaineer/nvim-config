@@ -19,6 +19,7 @@ call plug#begin('~/git/config/nvim/plugged')
   Plug 'mhinz/vim-signify'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-rhubarb' " :Gbrowse
+  Plug 'junegunn/gv.vim'
 
   set updatetime=100
 

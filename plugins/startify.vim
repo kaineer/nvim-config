@@ -24,6 +24,7 @@ let g:startify_lists = [
 let g:startify_bookmarks = [
       \     '~/git/config/nvim',
       \     '~/devel/htmlacademy/courses-packages',
+      \     '~/devel/htmlacademy/courses-packages/packages/courses-scripts/src',
       \     '~/devel/htmlacademy/courses-packages-legacy'
       \ ]
 let g:startify_custom_header_quotes = [

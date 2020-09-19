@@ -16,8 +16,11 @@ call plug#begin('~/git/config/nvim/plugged')
 
   " Something like magit
   "
+  Plug 'mhinz/vim-signify'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-rhubarb' " :Gbrowse
+
+  set updatetime=100
 
   " gc for commenting
   Plug 'tpope/vim-commentary'
@@ -53,6 +56,12 @@ call plug#begin('~/git/config/nvim/plugged')
 
   Plug 'evanleck/vim-svelte'
 
+  " M-p, M-P
+  Plug 'maxbrunsfeld/vim-yankstack'
+
+  " :Google
+  Plug 'szw/vim-g'
+
   Plug 'jceb/vim-orgmode'
   command -nargs=* -range SpeedDatingFormat
 
@@ -64,4 +73,7 @@ call plug#begin('~/git/config/nvim/plugged')
 
   " Which key
   Plug 'liuchengxu/vim-which-key'
+
+  " coc
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()

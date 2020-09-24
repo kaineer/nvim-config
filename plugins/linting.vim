@@ -1,7 +1,7 @@
 " Linting
 Plug 'dense-analysis/ale'
 
-" --- ale settings
+" " --- ale settings
 let b:ale_linters = { 'javascript': ['eslint'] }
 let b:ale_fixers = { 'javascript': ['eslint'] }
 let g:ale_set_loclist = -1

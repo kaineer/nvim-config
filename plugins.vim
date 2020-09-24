@@ -16,10 +16,10 @@ call plug#begin('~/git/config/nvim/plugged')
 
   " Something like magit
   "
-  Plug 'mhinz/vim-signify'
-  Plug 'tpope/vim-fugitive'
-  Plug 'tpope/vim-rhubarb' " :Gbrowse
-  Plug 'junegunn/gv.vim'
+  Plug 'mhinz/vim-signify' "  git gutter
+  Plug 'tpope/vim-fugitive' " :G
+  Plug 'tpope/vim-rhubarb' "  :Gbrowse
+  Plug 'junegunn/gv.vim' "    :GV
 
   set updatetime=100
 

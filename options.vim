@@ -26,3 +26,12 @@ set showbreak=↪
 set list!
 
 set shortmess+=A
+
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
+highlight lCursor guifg=NONE guibg=Cyan
+
+setlocal spell spelllang=ru_yo,en_us
+
+inoremap <C-Space> <C-^>

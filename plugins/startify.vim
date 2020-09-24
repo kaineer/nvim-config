@@ -15,7 +15,7 @@ let g:startify_custom_header =
 
 let g:startify_session_persistence = 1
 let g:startify_files_number = 10
-let g:startify_custom_indices = ['f', 'j', 'd', 'k', 's', 'l', 'a']
+let g:startify_custom_indices = ['f', 'j', 'd', 'k', 's', 'l', 'a', 't', 'y', 'r', 'u', 'e', 'i', 'w', 'o', 'q', 'p']
 let g:startify_lists = [
       \   { 'type': 'dir',       'header': ['   Recent files' ]},
       \   { 'type': 'sessions',  'header': ['   Saved sessions' ] },

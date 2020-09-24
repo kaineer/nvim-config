@@ -7,3 +7,6 @@ source ~/git/config/nvim/autocmds.vim
 source ~/git/config/nvim/autocmds/focus.vim
 
 colorscheme monokai
+
+hi CocErrorFloat ctermbg=235 ctermfg=202
+hi Pmenu ctermbg=235

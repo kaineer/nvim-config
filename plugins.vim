@@ -55,7 +55,7 @@ call plug#begin('~/git/config/nvim/plugged')
 
   Plug 'mustache/vim-mustache-handlebars'
 
-  Plug 'evanleck/vim-svelte'
+  Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
   " M-p, M-P
   Plug 'maxbrunsfeld/vim-yankstack'

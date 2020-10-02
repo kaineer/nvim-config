@@ -5,6 +5,7 @@ autocmd BufWritePre * %s/\s\+$//e
 
 autocmd BufEnter *.md nnoremap ,, :r !date +'\#\#\# [\%H:\%M]'<cr>kddA<cr> <esc>
 autocmd BufEnter *.md nnoremap ,. :r !date +'\#\# \%Y.\%m.\%d'<cr>kddA<cr> <esc>
+autocmd BufEnter *.md nnoremap ,<space> :r !date +'\#\# \%Y.\%m.\%d \%H:\%M'<cr>kddA<cr> <esc>
 
 autocmd BufEnter op.ls.sh nnoremap <buffer> ,s yy:!<c-r>"<cr>
 autocmd BufEnter op.ls.sh nnoremap <buffer> l yy:!<c-r>"<cr>

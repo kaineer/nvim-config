@@ -75,6 +75,6 @@ call plug#begin('~/git/config/nvim/plugged')
   " Which key
   Plug 'liuchengxu/vim-which-key'
 
-  " coc
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " " coc
+  " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()

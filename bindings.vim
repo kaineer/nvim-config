@@ -35,13 +35,13 @@ nnoremap <leader>fF viWy:Rg <c-r>"<cr>
 vnoremap <leader>fo y:BLines <c-r>"<cr>
 vnoremap <leader>ff y:Rg <c-r>"<cr>
 
-vnoremap <leader><leader> y:Google <c-r>"<cr>
+vnoremap <leader><leader> y:Google
 
 nnoremap <leader>of :Files<cr>
 nnoremap <leader>og :GFiles<cr>
 nnoremap <leader>oh :History<cr>
 nnoremap <silent><leader>oo :execute ":Dirvish ".expand("%:h")<cr>
-nnoremap <leader><leader> :Buffers<cr><cr>
+nnoremap <leader><leader> :bprev<cr>
 nnoremap <leader>oj :e .projections.json<cr>
 nnoremap <silent><leader>os :Startify<cr>
 nnoremap <silent><leader>oc :!code %<cr>
@@ -56,7 +56,6 @@ nnoremap <leader>wc :close<cr>
 
 nnoremap <leader>bs :Buffers<cr>
 nnoremap <leader>bn :bn<cr>
-nnoremap <leader>bp :bp<cr>
 
 nnoremap <leader>k :ALEPreviousWrap<cr>
 nnoremap <leader>j :ALENextWrap<cr>

@@ -47,8 +47,9 @@ call plug#begin('~/git/config/nvim/plugged')
 
   Plug 'drmingdrmer/vim-toggle-quickfix'
 
-  Plug 'rust-lang/rust.vim'
-  Plug 'cespare/vim-toml'
+  " I do not use rust for now
+  " Plug 'rust-lang/rust.vim'
+  " Plug 'cespare/vim-toml'
 
   Plug 'justinmk/vim-dirvish'
 
@@ -65,6 +66,8 @@ call plug#begin('~/git/config/nvim/plugged')
 
   " :Google
   Plug 'szw/vim-g'
+
+  " let g:vim_g_query_url="https://google.com/search?q="
 
   Plug 'jceb/vim-orgmode'
   command -nargs=* -range SpeedDatingFormat

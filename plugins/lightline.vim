@@ -10,7 +10,7 @@ let g:lightline = {
             \   'colorscheme': 'wombat',
             \   'active': {
             \     'left': [ [ 'mode', 'paste' ],
-            \               [ 'gitbranch', 'filename', 'readonly', 'modified' ],
+            \               [ 'gitbranch', 'relativepath', 'readonly', 'modified' ],
             \               [ 'gitdiff' ] ],
             \     'right': [ [ 'lineinfo' ],
             \                [ 'percent' ]

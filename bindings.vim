@@ -35,13 +35,13 @@ nnoremap <leader>fF viWy:Rg <c-r>"<cr>
 vnoremap <leader>fo y:BLines <c-r>"<cr>
 vnoremap <leader>ff y:Rg <c-r>"<cr>
 
-vnoremap <leader><leader> y:Google
+vnoremap <leader><leader> y:Google <c-r>"<cr>
 
 nnoremap <leader>of :Files<cr>
 nnoremap <leader>og :GFiles<cr>
 nnoremap <leader>oh :History<cr>
+" this one is equal to `-` btw
 nnoremap <silent><leader>oo :execute ":Dirvish ".expand("%:h")<cr>
-nnoremap <leader><leader> :bprev<cr>
 nnoremap <leader>oj :e .projections.json<cr>
 nnoremap <silent><leader>os :Startify<cr>
 nnoremap <silent><leader>oc :!code %<cr>
@@ -57,9 +57,25 @@ nnoremap <leader>wc :close<cr>
 nnoremap <leader>bs :Buffers<cr>
 nnoremap <leader>bn :bn<cr>
 
-nnoremap <leader>k :ALEPreviousWrap<cr>
-nnoremap <leader>j :ALENextWrap<cr>
+nnoremap <silent><leader>k :ALEPreviousWrap<cr>
+nnoremap <silent><leader>j :ALENextWrap<cr>
+
+nnoremap <silent><leader>ta :A<cr>
+nnoremap <silent><leader>tt :AT<cr>
+nnoremap <silent><leader>tv :AV<cr>
+nnoremap <silent><leader>ts :AS<cr>
+nnoremap <silent><leader>tn :tabnext<cr>
+nnoremap <silent><leader>tp :tabprev<cr>
 
 nnoremap <leader>bb :!google-chrome % &<cr>
 
 nnoremap <silent> <leader> :WhichKey '<Space>'<cr>
+
+nmap <silent><leader>dd <Plug>(coc-definition)
+nmap <silent><leader>dr <Plug>(coc-references)
+nmap <silent><leader>dj <Plug>(coc-implementation)
+nmap <silent><leader>da :CocAction<cr>
+
+nmap <silent><leader>ca <Plug>:CocAction<cr>
+
+nnoremap <silent><leader>, @q

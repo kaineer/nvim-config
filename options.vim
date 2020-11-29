@@ -32,6 +32,6 @@ set iminsert=0
 set imsearch=0
 highlight lCursor guifg=NONE guibg=Cyan
 
-setlocal spell spelllang=ru_yo,en_us
+" setlocal spell spelllang=ru_yo,en_us
 
 inoremap <C-Space> <C-^>

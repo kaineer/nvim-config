@@ -8,7 +8,7 @@ autocmd BufEnter *.md nnoremap ,. :r !date +'\#\# \%Y.\%m.\%d'<cr>kddA<cr> <esc>
 autocmd BufEnter *.md nnoremap ,<space> :r !date +'\#\# \%Y.\%m.\%d \%H:\%M'<cr>kddA<cr> <esc>
 
 autocmd BufEnter op.ls.sh nnoremap <buffer> ,s yy:!<c-r>"<cr>
-autocmd BufEnter op.ls.sh nnoremap <buffer> l yy:!<c-r>"<cr>
+autocmd BufEnter op.ls.sh nnoremap <buffer> l yy:!<c-r>" -nosound >/dev/null 2>&1<cr>
 autocmd BufEnter op.ls.sh nnoremap <buffer> L vawy:e ~/bin/<c-r>"<cr>
 autocmd BufEnter op.ls.sh nnoremap <buffer> h ZZ<cr>
 
@@ -26,6 +26,8 @@ autocmd BufEnter *.svelte :ALEDisableBuffer
 autocmd BufEnter *.js nnoremap <leader>it ggi<c-r>="// ".expand("%:h")."/".expand("%:t")<cr><c-c>
 autocmd BufEnter *.py nnoremap <leader>it ggi<c-r>="# ".expand("%:h")."/".expand("%:t")<cr><c-c>
 
+autocmd BufEnter Readme.md nnoremap <leader>ic i#<cr><cr>###<cr><cr>###<cr><c-c>gg
+
 autocmd FileType dirvish nmap <buffer> t .touch<end><left>
 autocmd FileType dirvish nmap <buffer> m .mkdir<end><left>
 autocmd FileType dirvish nmap <buffer> l <cr>
@@ -33,3 +35,5 @@ autocmd FileType dirvish nmap <buffer> h -
 autocmd FileType dirvish nmap <buffer> r .rm
 autocmd FileType dirvish nmap <buffer> n .nemo<cr>
 
+autocmd FileType dirvish nmap <buffer> cc tReadme.md<cr>tindex.ts<cr>mtests<cr><cr>
+autocmd FileType dirvish nmap <buffer> ct tindex.test.ts<cr><cr>

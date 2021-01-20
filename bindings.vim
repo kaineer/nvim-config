@@ -79,3 +79,4 @@ nmap <silent><leader>da :CocAction<cr>
 nmap <silent><leader>ca <Plug>:CocAction<cr>
 
 nnoremap <silent><leader>, @q
+nnoremap <silent>;; @

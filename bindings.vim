@@ -54,6 +54,9 @@ nnoremap <leader>wv :vs<cr>
 nnoremap <leader>ww :on<cr>
 nnoremap <leader>wc :close<cr>
 
+nnoremap <leader>wV :vs<cr>:execute "wincmd l"<cr>:terminal<cr>i
+nnoremap <leader>wS :sp<cr>:execute "wincmd j"<cr>:terminal<cr>i
+
 nnoremap <leader>bs :Buffers<cr>
 nnoremap <leader>bn :bn<cr>
 
@@ -80,3 +83,6 @@ nmap <silent><leader>ca <Plug>:CocAction<cr>
 
 nnoremap <silent><leader>, @q
 nnoremap <silent>;; @
+
+tnoremap <silent> <m-x> <c-\><c-n>:bd!<cr>
+

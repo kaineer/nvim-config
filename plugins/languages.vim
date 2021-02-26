@@ -11,5 +11,9 @@ Plug 'mustache/vim-mustache-handlebars'
 
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
+Plug 'markcornick/vim-bats'
+
 Plug 'jceb/vim-orgmode'
 command -nargs=* -range SpeedDatingFormat
+
+Plug 'cespare/vim-toml'

@@ -10,6 +10,19 @@ nnoremap <silent> <m-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <m-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <m-l> :TmuxNavigateRight<cr>
 
+" Terminal
+tnoremap <silent> <m-h> <c-\><c-n>:TmuxNavigateLeft<cr>
+tnoremap <silent> <m-j> <c-\><c-n>:TmuxNavigateDown<cr>
+tnoremap <silent> <m-k> <c-\><c-n>:TmuxNavigateUp<cr>
+tnoremap <silent> <m-l> <c-\><c-n>:TmuxNavigateRight<cr>
+
+" Insert mode
+"
+inoremap <silent> <m-h> <c-[>:TmuxNavigateLeft<cr>
+inoremap <silent> <m-j> <c-[>:TmuxNavigateDown<cr>
+inoremap <silent> <m-k> <c-[>:TmuxNavigateUp<cr>
+inoremap <silent> <m-l> <c-[>:TmuxNavigateRight<cr>
+
 " Dirvish
 " . -> make sh command with filename
 " t -> make touch command with filename
@@ -31,3 +44,5 @@ Plug 'dhruvasagar/vim-open-url'
 let g:open_url#engines#default='google'
 
 Plug 'easymotion/vim-easymotion'
+
+Plug 'geekjuice/vim-mocha'

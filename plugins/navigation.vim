@@ -28,9 +28,12 @@ inoremap <silent> <m-l> <c-[>:TmuxNavigateRight<cr>
 " t -> make touch command with filename
 " m -> make mkdir command with filename
 Plug 'justinmk/vim-dirvish'
+Plug 'fsharpasharp/vim-dirvinist'
 
 " :A
 Plug 'tpope/vim-projectionist'
+
+Plug 'tpope/vim-dispatch'
 
 " :Google
 Plug 'szw/vim-g'
@@ -46,3 +49,8 @@ let g:open_url#engines#default='google'
 Plug 'easymotion/vim-easymotion'
 
 Plug 'geekjuice/vim-mocha'
+
+" Plug 'szw/vim-tags'
+
+" let g:vim_tags_auto_generate = 1
+

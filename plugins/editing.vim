@@ -12,3 +12,9 @@ Plug 'maxbrunsfeld/vim-yankstack'
 "Plug 'tomtom/tlib_vim'
 "Plug 'garbas/vim-snipmate'
 "Plug 'honza/vim-snippets'
+"
+" LF --
+" Plug 'ptzz/lf.vim'
+Plug 'voldikss/vim-floaterm'
+
+Plug 'kdheepak/lazygit.nvim', { 'branch': 'nvim-v0.4.3' }

@@ -12,6 +12,7 @@ nnoremap <leader>ce :e $MYVIMRC<cr>
 
 " Clipboard
 nnoremap <leader>yy "+y
+vnoremap <leader>yy "+y
 nnoremap <leader>pp "+p
 nnoremap <leader>PP "+P
 
@@ -27,6 +28,8 @@ nnoremap <leader>sc :Colors<cr>
 
 nnoremap <leader>sb :Buffers<cr>
 
+nnoremap <leader>cc :Commands<cr>
+
 " Search
 "
 nnoremap <leader>fo viwy:BLines <c-r>"<cr>
@@ -34,6 +37,8 @@ nnoremap <leader>ff viwy:Rg <c-r>"<cr>
 nnoremap <leader>fF viWy:Rg <c-r>"<cr>
 vnoremap <leader>fo y:BLines <c-r>"<cr>
 vnoremap <leader>ff y:Rg <c-r>"<cr>
+
+nnoremap <leader>fm :Marks<cr>
 
 vnoremap <leader><leader> y:Google <c-r>"<cr>
 
@@ -46,7 +51,11 @@ nnoremap <leader>oj :e .projections.json<cr>
 nnoremap <silent><leader>os :Startify<cr>
 nnoremap <silent><leader>oc :!code %<cr>
 
+nnoremap <silent><leader>lf :Lf<cr>
+tnoremap <silent><leader>lf :Lf<cr>
+
 nnoremap <silent><leader>hh :nohl<cr>
+nnoremap ZA :qa!<cr>
 
 " Window splits
 nnoremap <leader>ws :sp<cr>
@@ -69,6 +78,7 @@ nnoremap <silent><leader>tv :AV<cr>
 nnoremap <silent><leader>ts :AS<cr>
 nnoremap <silent><leader>tn :tabnext<cr>
 nnoremap <silent><leader>tp :tabprev<cr>
+nnoremap <silent><leader>tl :Dirvinist<cr>
 
 nnoremap <leader>bb :!google-chrome % &<cr>
 
@@ -85,4 +95,23 @@ nnoremap <silent><leader>, @q
 nnoremap <silent>;; @
 
 tnoremap <silent> <m-x> <c-\><c-n>:bd!<cr>
+
+nnoremap <leader>rr :RainbowToggle<cr>
+
+inoremap .2 ../..
+inoremap .3 ../../..
+inoremap .4 ../../../..
+inoremap .<c-c> .
+inoremap .<c-[> .
+
+nnoremap <silent><leader>fd :call fzf#run(fzf#wrap({'source': 'fasd -dR', 'sink': { line -> execute('Dirvish ' . split(line)[-1]) }, 'options': ['--height=90%', '--border=sharp']}))<cr>
+
+nnoremap <leader>q :call togglequickfix#ToggleQuickfix()<cr>
+nnoremap zz $V%zf
+nnoremap zo zrzm
+
+inoremap <c-j> <c-^>
+
+nnoremap <silent><leader>sh :SignifyToggleHighlight<cr>
+nnoremap <silent><leader>st :SignifyToggle<cr>
 

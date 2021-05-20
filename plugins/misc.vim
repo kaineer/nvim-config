@@ -1,5 +1,7 @@
 " Tracking
-Plug 'wakatime/vim-wakatime'
+if filereadable("~/.wakatime.cfg")
+  Plug 'wakatime/vim-wakatime'
+endif
 
 " Which key
 Plug 'liuchengxu/vim-which-key'

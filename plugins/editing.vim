@@ -18,3 +18,4 @@ Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'voldikss/vim-floaterm'
 
 Plug 'kdheepak/lazygit.nvim', { 'branch': 'nvim-v0.4.3' }
+

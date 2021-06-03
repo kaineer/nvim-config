@@ -47,3 +47,4 @@ let g:vimwiki_list = [{'path': '~/devel/kaineer/vimwiki/',
 let g:floaterm_width = 0.97
 let g:floaterm_height = 0.9
 
+

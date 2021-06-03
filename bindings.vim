@@ -101,10 +101,12 @@ nnoremap <leader>rr :RainbowToggle<cr>
 inoremap .2 ../..
 inoremap .3 ../../..
 inoremap .4 ../../../..
-inoremap .<c-c> .
-inoremap .<c-[> .
+inoremap .<space> .<space>
+inoremap .<c-c> .<c-[>
+inoremap .<c-[> .<c-[>
 
 nnoremap <silent><leader>fd :call fzf#run(fzf#wrap({'source': 'fasd -dR', 'sink': { line -> execute('Dirvish ' . split(line)[-1]) }, 'options': ['--height=90%', '--border=sharp']}))<cr>
+nnoremap <leader>fn :call fzf#run(fzf#wrap({'source': '/home/kaineer/bin/xx', 'sink' : { line -> execute(':terminal npm run ' . line) } }))<cr>
 
 nnoremap <leader>q :call togglequickfix#ToggleQuickfix()<cr>
 nnoremap zz $V%zf

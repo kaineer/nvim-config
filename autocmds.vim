@@ -20,7 +20,7 @@ autocmd BufEnter *.js nnoremap ,{ zfa{
 autocmd BufEnter *.js nnoremap ,( zfa(
 autocmd BufEnter *.js nnoremap ,ce Acontext('» ', () => {<cr><cr>});<c-c>kkf»l
 
-autocmd BufEnter *.svelte :ALEDisableBuffer
+" autocmd BufEnter *.svelte :ALEDisableBuffer
 
 " Insertions
 "

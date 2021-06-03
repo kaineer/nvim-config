@@ -10,16 +10,6 @@ Plug 'nelsyeung/twig.vim'
 
 Plug 'mustache/vim-mustache-handlebars'
 
-" *** Svelte ***
-"
-" Plug 'evanleck/vim-svelte', {'branch': 'main'}
-"
-" Looks like evanleck/vim-svelte
-"   parses javascript not as intended.
-"
-Plug 'leafOfTree/vim-svelte-plugin'
-" /** Svelte ***
-
 Plug 'markcornick/vim-bats'
 
 " Plug 'jceb/vim-orgmode'

@@ -11,6 +11,7 @@ autocmd BufEnter op.ls.sh nnoremap <buffer> ,s yy:!<c-r>"<cr>
 " autocmd BufEnter op.ls.sh nnoremap <buffer> l yy:!<c-r>" -nosound >/dev/null 2>&1<cr>
 
 autocmd BufEnter op.ls.sh nnoremap <buffer> <silent>l 0yy :exec 'silent !<c-r>"'<cr><c-c>0
+autocmd BufEnter op.ls.sh nnoremap <buffer> <silent>m :!mm<cr>
 autocmd BufEnter op.ls.sh nnoremap <buffer> L vawy:e ~/bin/<c-r>"<cr>
 autocmd BufEnter op.ls.sh nnoremap <buffer> h ZZ<cr>
 
@@ -51,7 +52,6 @@ autocmd BufEnter *.js nnoremap <buffer> <leader>ma :call RunAllSpecs()<cr>
 let g:mocha_js_command ="!node_modules/.bin/mocha --recursive {spec}"
 
 autocmd BufEnter *.ts.snap set syntax=javascript
-autocmd BufEnter dunstrc set syntax=cfg
 
 autocmd BufEnter *.d nnoremap <buffer> <leader>r :!dmd -run %<cr>
 
@@ -64,6 +64,7 @@ autocmd BufEnter *.test.ts nnoremap <buffer> <leader>tt :call CocAction('runComm
 autocmd BufEnter *.test.ts nnoremap <buffer> <leader>tf :call CocAction('runCommand', 'jest.fileTest')<cr>
 
 autocmd BufEnter *.json set filetype=jsonc
+autocmd BufEnter *.pcss set filetype=scss
 
 autocmd Filetype javascript,typescript setlocal foldmethod=syntax
 autocmd FileType javascript,typescript setlocal foldlevel=2

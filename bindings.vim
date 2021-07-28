@@ -40,6 +40,9 @@ vnoremap <leader>ff y:Rg <c-r>"<cr>
 
 nnoremap <leader>fm :Marks<cr>
 
+nnoremap <leader>fp :CocCommand prettier.formatFile<cr>
+vnoremap <leader>fp :CocCommand prettier.formatFile<cr>
+
 vnoremap <leader><leader> y:Google <c-r>"<cr>
 
 nnoremap <leader>of :Files<cr>
@@ -117,3 +120,4 @@ inoremap <c-j> <c-^>
 nnoremap <silent><leader>sh :SignifyToggleHighlight<cr>
 nnoremap <silent><leader>st :SignifyToggle<cr>
 
+nnoremap <silent><leader>se vawy:e ~/bin/<c-r>"<cr>

@@ -47,4 +47,4 @@ let g:vimwiki_list = [{'path': '~/devel/kaineer/vimwiki/',
 let g:floaterm_width = 0.97
 let g:floaterm_height = 0.9
 
-
+let g:coc_node_path = '/home/kaineer/.nvm/versions/node/v14.17.3/bin/node'
